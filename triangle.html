@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .triangle{
+            border-top : none;
+            border-left : 300px solid transparent;
+            border-right : 300px solid transparent;
+            border-bottom : 150px solid rgb(179, 79, 79);
+            height: 0px;
+            width: 0px;
+            position: relative;
+        }
+
+        .circle::after{
+            content: "";
+            width : 106.05px;
+            height: 106.05px;
+            position: absolute;
+            background-color: rgb(246, 248, 243);
+            top:22px;
+            left:22px
+        }
+
+        .circle{
+            width : 150px;
+            height : 150px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: rgb(35, 61, 179);
+            left : -70px;
+        }
+    </style>
+</head>
+<body>
+    <div class="triangle">
+        <div class="circle">
+        </div>
+    </div>
+</body>
+</html>

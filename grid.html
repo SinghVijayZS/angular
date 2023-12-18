@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="grid.css" />
+</head>
+<body>
+    <script>
+        function formSubmit(e){
+            e.preventDefault();
+            var form = document.getElementById('form');
+            input = parseInt(form['input'].value);
+            var container = document.getElementById('container');
+            container.innerHTML = '';
+            if(input<4){
+                console.log("input - 1");
+                container.style.gridTemplateRows = 'repeat(1,1fr)';
+            }else if(input<7){
+                console.log("input - 2");
+                container.style.gridTemplateRows = 'repeat(2,1fr)';
+            }else{
+                console.log("input - 3");
+                container.style.gridTemplateRows = 'repeat(3,1fr)';
+            }
+            var lastRow = parseInt(input/3)*3;
+            var lastRowClass = 'item';
+            if(input-lastRow === 0){
+                lastRowClass = 'item';
+            }else if(input - lastRow === 1){
+                lastRowClass = 'item-1'
+            }else{
+                lastRowClass = 'item-2'
+            }
+            for(let i=0;i<input;i++){
+                var divElement = document.createElement('div');
+                if(i > lastRow-1){
+                    divElement.className = lastRowClass;
+                }else{
+                    divElement.className = 'item';
+                }
+                container.appendChild(divElement);
+            }
+        }
+    </script>
+    <form onsubmit="formSubmit(event)" id="form">
+        <input type="number" placeholder="Enter number" name="input" required/>
+        <input type="submit" value="Submit Now" />
+    </form>
+    <div class="grid-container" id="container">
+    </div>
+</body>
+</html>

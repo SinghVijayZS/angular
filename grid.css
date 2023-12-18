@@ -1,0 +1,118 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    height:100vh;
+    width:100%
+ }
+
+ .item-1{
+    grid-column: auto/span 6;
+    width: 100%-20px;
+    height: 100%-20px;
+    background-color: burlywood;
+}
+
+.item-2{
+    grid-column: auto/span 3;
+    width: 100%-20px;
+    height: 100%-20px;
+    background-color: burlywood;
+}
+
+.item{
+    grid-column: auto/span 2;
+    width: 100%-20px;
+    height: 100%-20px;
+    background-color: burlywood;
+}
+
+
+ @media only screen and (max-width : 600px) and (min-width:0px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        overflow-y: scroll;
+    }
+
+    .item-1{
+        grid-column: auto/span 2;
+        width: 100%-20px;
+        height: 100%-20px;
+        background-color: burlywood;
+    }
+
+    .item-2{
+        grid-column: auto/span 1;
+        width: 100%-20px;
+        height: 100%-20px;
+        background-color: burlywood;
+    }
+
+    .item{
+        grid-column: auto/span 2;
+        width: 100%-20px;
+        height: 100%-20px;
+        background-color: burlywood;
+    }
+ }
+
+ @media only screen and (max-width : 900px) and (min-width:601px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        overflow-y: scroll;
+    }
+
+    .item-1{
+        grid-column: auto/span 6;
+        width: 100%-20px;
+        height: 100%-20px;
+        background-color: burlywood;
+    }
+
+    .item-2{
+        grid-column: auto/span 3;
+        width: 100%-20px;
+        height: 100%-20px;
+        background-color: burlywood;
+    }
+
+    .item{
+        grid-column: auto/span 2;
+        width: 100%-20px;
+        height: 100%-20px;
+        background-color: burlywood;
+    }
+ }
+
+.grid-container div{
+    margin : 5px;
+    padding : 5px;
+    overflow: hidden;
+    border: 0px solid transparent;
+}
+
+
+form{
+    text-align: center;
+    margin : 20px;
+    display: flex;
+}
+
+input[type="submit"]{
+    background-color: rgb(105, 97, 224);
+    margin-left: 2px;
+    width: 50%;
+    height: 30px;
+    border: 0px ;
+}
+
+input{
+    width:100%;
+    height : 20px;
+}
