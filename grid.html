@@ -15,14 +15,14 @@
             var container = document.getElementById('container');
             container.innerHTML = '';
             if(input<4){
-                console.log("input - 1");
                 container.style.gridTemplateRows = 'repeat(1,1fr)';
             }else if(input<7){
-                console.log("input - 2");
                 container.style.gridTemplateRows = 'repeat(2,1fr)';
-            }else{
-                console.log("input - 3");
+            }else if(input<9){
                 container.style.gridTemplateRows = 'repeat(3,1fr)';
+            }else{
+                let rows = Math.ceil(input/3);
+                container.style.gridTemplateRows = `repeat(${rows},1fr)`;
             }
             var lastRow = parseInt(input/3)*3;
             var lastRowClass = 'item';
@@ -39,6 +39,9 @@
                     divElement.className = lastRowClass;
                 }else{
                     divElement.className = 'item';
+                }
+                if(input>9){
+                    divElement.style.height = 'calc(100vh/3)'
                 }
                 container.appendChild(divElement);
             }

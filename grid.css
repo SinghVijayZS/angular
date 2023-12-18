@@ -6,6 +6,7 @@ body{
 .grid-container{
     display: grid;
     grid-template-columns: repeat(6,1fr);
+    overflow-y: scroll;
     height:100vh;
     width:100%
  }
@@ -93,7 +94,6 @@ body{
 .grid-container div{
     margin : 5px;
     padding : 5px;
-    overflow: hidden;
     border: 0px solid transparent;
 }
 
@@ -107,12 +107,12 @@ form{
 input[type="submit"]{
     background-color: rgb(105, 97, 224);
     margin-left: 2px;
-    width: 50%;
+    flex:1;
     height: 30px;
     border: 0px ;
 }
 
 input{
-    width:100%;
+    flex:1;
     height : 20px;
 }
