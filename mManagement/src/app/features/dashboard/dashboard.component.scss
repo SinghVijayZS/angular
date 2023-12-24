@@ -1,0 +1,23 @@
+.row{
+    width:calc(100vw-20px);
+    margin:10px;
+}
+
+.project-card{
+    height:20vh;
+    width:auto;
+    display: flex;
+}
+
+.title{
+    justify-content: start;
+}
+
+.isMember{
+    justify-content: end;    
+    height:5px;
+    width:5px;
+    border: 0px solid white;
+    background-color: white;
+    border-radius: 50%;
+}
