@@ -3,8 +3,8 @@ export interface Project {
     member:boolean;
     name:string;
     numberOfSubProjects:number;
-    parentProjectId:number;
+    parentProjectId:number | null;
     slug:string;
-    taskTeamId:number;
+    taskTeamId:number | null;
     teamSize:number;
 }

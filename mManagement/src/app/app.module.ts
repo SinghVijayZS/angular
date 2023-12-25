@@ -7,8 +7,7 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './features/dashboard/dashboard.component';
 import { EditorComponent } from './shared/editor/editor.component';
 import {NgxWigModule} from 'ngx-wig';
-import { HttpService } from './core/services/http/http.service';
-import { ProjectService } from './core/services/project/project.service';
+import { LocalDate } from './core/utils/local-date';
 
 @NgModule({
   declarations: [
@@ -19,10 +18,9 @@ import { ProjectService } from './core/services/project/project.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxWigModule,
-    HttpClientModule
-  ],
-  providers: [HttpService,ProjectService],
+    NgxWigModule
+    ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
