@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Constants } from 'src/app/core/enum/constants.enum';
-import { Update } from 'src/app/core/modal/update.interface';
-import { Project } from 'src/app/core/modal/project.interface';
+import { Update } from 'src/app/core/models/update.interface';
+import { Project } from 'src/app/core/models/project.interface';
 import { LocalDate } from 'src/app/core/utils/local-date';
 
 @Component({

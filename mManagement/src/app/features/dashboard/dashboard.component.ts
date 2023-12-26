@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Project } from 'src/app/core/modal/project.interface';
-import { Organisation } from 'src/app/core/modal/organisation.interface';
-import { Employee } from 'src/app/core/modal/employee.interface';
-import { Timeline } from 'src/app/core/modal/timeline.interface';
-import { SubordinatesData } from 'src/app/core/modal/subordinates-data.interface';
+import { Project } from 'src/app/core/models/project.interface';
+import { Organisation } from 'src/app/core/models/organisation.interface';
+import { Employee } from 'src/app/core/models/employee.interface';
+import { Timeline } from 'src/app/core/models/timeline.interface';
+import { SubordinatesData } from 'src/app/core/models/subordinates-data.interface';
 import { LocalDate } from 'src/app/core/utils/local-date';
 
 @Component({
