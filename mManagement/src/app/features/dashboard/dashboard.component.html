@@ -56,7 +56,7 @@
                         <span *ngFor="let employee of getUnionOfArray(subordinateLeaves.directReporteesDetails,
                         subordinateLeaves.indirectReporteesDetails)" class="subordinate-stats-employee">
                             <img src={{employee.profileUrl}} alt={{employee.name}} />
-                            <span>{{employee.name}}</span>
+                            <span class="subordinate-stats-employee-name">{{employee.name}}</span>
                         </span>
                 </div>
                 <div *ngIf="subordinateLeaves.directReportees + subordinateLeaves.indirectReportees <= 0" class="no-subordinate-data">
@@ -81,7 +81,7 @@
                         getUnionOfArray(subordinateNoUpdates.directReporteesDetails,subordinateNoUpdates.indirectReporteesDetails)"
                         class="subordinate-stats-employee" >
                             <img src={{employee.profileUrl}} alt={{employee.name}} />
-                            <p>{{employee.name}}</p>
+                            <p class="subordinate-stats-employee-name">{{employee.name}}</p>
                         </span>
                 </div>
                 <div *ngIf="subordinateNoUpdates.directReportees + subordinateNoUpdates.indirectReportees <= 0" class="no-subordinate-data">

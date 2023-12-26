@@ -302,13 +302,23 @@ Direct reportees section
     background-color: #5c8aff26;
 }
 
-.subordinate-stats-employee p{
-    font-size: 13px;
+.subordinate-stats-employee-name{
+    font-size: 16px;
     overflow: hidden;
     text-align: start;
     text-overflow: ellipsis;
     white-space: nowrap;
     word-break: break-word;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;    
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.subordinate-stats-employee-name:hover{
+    color: blueviolet;
+    text-decoration: underline;
 }
 
 .subordinate-stats-employee img{
