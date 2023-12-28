@@ -1,5 +1,5 @@
 import { Gender } from "../enum/gender.enum";
-import {LocalDate} from "../utils/local-date";
+import {LocalDate} from "../utils/local-date/local-date";
 
 export interface Employee {
     id: number;

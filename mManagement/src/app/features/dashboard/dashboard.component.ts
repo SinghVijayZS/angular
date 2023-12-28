@@ -4,7 +4,7 @@ import { Organisation } from 'src/app/core/models/organisation.interface';
 import { Employee } from 'src/app/core/models/employee.interface';
 import { Timeline } from 'src/app/core/models/timeline.interface';
 import { SubordinatesData } from 'src/app/core/models/subordinates-data.interface';
-import { LocalDate } from 'src/app/core/utils/local-date';
+import { LocalDate } from 'src/app/core/utils/local-date/local-date';
 
 @Component({
   selector: 'dashboard',
